@@ -1,13 +1,227 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ausnath A. | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(120deg, #3f51b5, #5a55ae);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+      animation: fadeIn 1s ease forwards;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+      animation: fadeIn 1.5s ease forwards;
+    }
+    header a {
+      color: #ffeb3b;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    header a:hover {
+      color: #ffffff;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.7s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      border-left: 5px solid #3f51b5;
+      padding-left: 0.8rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #3f51b5;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    a {
+      color: #3f51b5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .resume-btn {
+      display: inline-block;
+      background: #3f51b5;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: transform 0.3s ease;
+      text-decoration: none;
+    }
+    .resume-btn:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #3f51b5;
+      color: white;
+      margin-top: 3rem;
+    }
+    .footer a {
+      color: #ffeb3b;
+      margin: 0 0.5rem;
+      font-weight: 500;
+    }
+    .toggle-mode {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: #3f51b5;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    body.dark-mode {
+      background: #1c1c1c;
+      color: #eee;
+    }
+    body.dark-mode header,
+    body.dark-mode .footer {
+      background: #2e2e2e;
+    }
+    body.dark-mode a {
+      color: #ffca28;
+    }
+    body.dark-mode .resume-btn,
+    body.dark-mode .toggle-mode {
+      background: #ffca28;
+      color: #2e2e2e;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <h1>Ausnath A. Portfolio</h1>
-  <p>This is a placeholder. The full portfolio HTML is long and was already saved in the canvas.</p>
-</body>
+  <header>
+    <h1>Ausnath A.</h1>
+    <p>Aspiring Software Developer | Cloud Enthusiast | UX Design Learner</p>
+    <p>Email: <a href="mailto:ausnatha@gmail.com">ausnatha@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/ausnath-anand" target="_blank">ausnath-anand</a> | GitHub: <a href="https://github.com/Ausnath" target="_blank">Ausnath</a></p>
+    <a href="https://drive.google.com/file/d/1sUgDzE6e-d4mDeQ1dBEUo3g0em27X0ae/view?usp=drivesdk" class="resume-btn" target="_blank">Download Resume</a>
+  </header>  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I’m a Computer Science and Engineering graduate passionate about software development, cloud computing, and user experience design. I'm looking for roles where I can contribute meaningfully to real-world tech solutions while continuing to grow my skills.</p>
+    </section><section>
+  <h2>Education</h2>
+  <ul>
+    <li><strong>B.E. CSE</strong> – DMI College of Engineering (2020–2024) – 84%</li>
+    <li><strong>HSC</strong> – Govt. Hr. Sec. School, Somangalam (2019–2020) – 73.5%</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Certifications</h2>
+  <ul>
+    <li>Cloud Computing – ICT Academy</li>
+    <li>CyberShiksha Certification</li>
+    <li>UX Design – UI/UX Fundamentals</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <ul>
+    <li><strong>Languages:</strong> Python, SQL, HTML, CSS</li>
+    <li><strong>Frameworks:</strong> Django</li>
+    <li><strong>Cloud:</strong> AWS Basics, Deployment Knowledge</li>
+    <li><strong>Networking:</strong> OSI, IP Addressing</li>
+    <li><strong>Design:</strong> UX Wireframing, UI Tools</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <p><strong>Plant Disease Detection (2024)</strong><br />
+  Used DenseNet & Xception models in a Django web app to detect plant diseases from leaf images.</p>
+</section>
+
+<section>
+  <h2>Internship</h2>
+  <p><strong>Python Intern – Seval Software Technologies</strong> (1 Month)<br />
+  Worked on basic Python modules, OOPs, and small scripts as part of a learning internship.</p>
+</section>
+
+<section>
+  <h2>Conferences & Participation</h2>
+  <ul>
+    <li>Presented in National and International Technical Conferences</li>
+    <li>Attended Workshops on Cloud, AI/ML Trends</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Hobbies</h2>
+  <ul>
+    <li>Webnovel Writing</li>
+    <li>Singing</li>
+    <li>Fashion</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Career Goal</h2>
+  <p>To become a skilled software or cloud developer, contributing to impactful, real-world technology solutions.</p>
+</section>
+
+  </main>  <footer class="footer">
+    &copy; 2025 Ausnath A.
+  </footer><button class="toggle-mode" onclick="document.body.classList.toggle('dark-mode')">Toggle Mode</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('main section');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      sections.forEach(section => observer.observe(section));
+    });
+  </script></body>
 </html>
